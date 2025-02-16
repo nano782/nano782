@@ -1,0 +1,92 @@
+body{
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.header-area{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+.right-area{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+    
+    
+}
+.header-button{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.header-button:hover{
+    cursor: pointer;
+    color: green;   
+}
+.profile-image{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.left-area{
+    display: flex;
+    align-content: center;
+
+    
+}
+.left-area h1{
+    color: whitesmoke;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.center-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: bisque;
+}
+.bottom-area{
+    color: whitesmoke;
+    background-color: black;
+    opacity: 0.9;
+    padding: 20px;
+
+}
+.mywork-area{
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0.7;
+    background-color: black;
+    padding: 20px;
+}
+.blank-space{
+    height: 400px;
+}
+.work-card{
+    height: 80px;
+    width: 100px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-card a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    
+}

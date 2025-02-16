@@ -1,0 +1,50 @@
+.heading-text-area{
+    background-color: #444483c4;
+    justify-items: center;
+    color: white;
+    padding: 1px;
+    border-radius: 10px;
+    
+}
+.heading-text{
+      font-size: 50px;
+}
+.score-info{
+    
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+.player-info{
+    
+    justify-items: center;
+    display: flex;
+    padding: 10px;
+}
+.result-area{
+    display: flex;
+    justify-content: space-evenly;
+}
+.player-result-area img{
+    height: 100px;
+    width: 100px;
+}
+.button-selection-area{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+}
+   
+.button-selection img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+   border-color: chartreuse;
+   border-width: 5px;
+   background-color: palevioletred;
+}
+.status-area{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}

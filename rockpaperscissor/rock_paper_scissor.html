@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="heading-text-area">
+        <h1 class="heading-text">Rock Paper Scissor</h1>
+    </div>
+    
+    <div class="score-info">
+        <div class="player-info">
+            <h1 >You :</h1>
+            <h1 id="player-score-text">0</h1>
+        </div>
+        <div class="player-info">
+            <h1 >Computer :</h1>
+            <h1 id="computer-score-text" >0</h1>
+        </div>
+
+    </div>
+    <div class="result-area">
+        <div class="player-result-area">
+            <img src="./img/loading.gif" id="player-result">
+        </div>
+        <div class="player-result-area">
+            <img src="./img/loading.gif" id="computer-result">
+        </div>
+
+    </div>
+   <div class="status-area">
+       <h1 id="status-text">Choose Your Move!</h1>
+   </div>
+    <div class="button-selection-area">
+        <div class="button-selection" onclick="buttonSelected('rock')">
+            <img src="./img/rock.png">
+        </div>
+        <div class="button-selection" onclick="buttonSelected('paper')">
+            <img src="./img/paper.png">
+        </div>
+        <div class="button-selection" onclick="buttonSelected('scissor')">
+            <img src="./img/scissor.png">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
