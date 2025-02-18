@@ -3,10 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="./tic.css">
 </head>
 <body>
-    <h1>Tic Tac Toe</h1>
-    <h2>This game is under development</h2>
+    <div class="game-text">
+        <h1>Tic Tac Toe</h1>
+    </div>
+    
+    <div class="scoreboard">
+        <div class="opponent-info">
+            <h1>You</h1>
+            <h1 id="opponent-score-text">0</h1>
+        </div>
+        <div class="opponent-info">
+            <h1>Computer</h1>
+            <h1 id="computer-score-text">0</h1>
+        </div>
+    </div>
+    <div class="game-area"></div>
+        
+    <div class="text-area">
+        <h1 id="game-status-text">Choose Your Move!</h1>
+         <img src="./img/searching.gif" id="searching-icon">
+    </div>
+    <div class="play-button-area">
+        <button class="play">Play Again</button>
+    </div>
+
+    
+
 </body>
 </html>

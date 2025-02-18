@@ -1,0 +1,70 @@
+.game-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 120px;
+    
+
+}
+.game-text h1{
+    padding: 4px;
+    display: flex;
+    font-size: 50px;
+    font-weight: 500;
+    color: black;
+}
+.opponent-info{
+    padding: 5px;
+   }
+.opponent-info h1{
+    display: flex;
+    padding: 5px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+.scoreboard{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 40px;
+}
+.game-area{
+    background-color: black;
+    height: 50vh;
+    width: 50%;
+    margin:auto;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    border-radius: 40px;
+    
+}
+.text-area{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+.text-area h1{
+    align-items: center;
+    justify-items: center;
+    
+}
+.text-area img{
+    height: 100px;
+    
+}
+.play-button-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.play{
+    height: 50px;
+    width: 120px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: green;
+}
