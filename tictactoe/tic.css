@@ -15,6 +15,7 @@
 }
 .opponent-info{
     padding: 5px;
+    margin-left: 100px;
    }
 .opponent-info h1{
     display: flex;
@@ -26,20 +27,36 @@
     display: flex;
     justify-content: space-evenly;
     
-    margin-top: 40px;
+    /* margin-top: 40px; */
 }
 .game-area{
     background-color: black;
-    height: 50vh;
-    width: 50%;
-    margin:auto;
+    height: 300px;
+    width: 300px;
+    margin: auto;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    border-radius: 40px;
+    
+    /* margin-top: 40px; */
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+   
     
 }
+.game-area > div{
+    background-color: white;
+    height: 96px;
+    width: 96px;
+    text-align: center;
+    
+}
+.game-area > img{
+    height: 96px;
+    width: 96px;
+}
+
+
 .text-area{
     display:flex;
     justify-content: center;
@@ -54,6 +71,7 @@
 }
 .text-area img{
     height: 100px;
+    display: none;
     
 }
 .play-button-area{
@@ -67,4 +85,5 @@
     font-size: 20px;
     border-radius: 10px;
     background-color: green;
+    display: none;
 }
