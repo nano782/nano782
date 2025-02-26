@@ -5,7 +5,7 @@ let playerAction="loading";
 let gameState="idle";
 let winStatus="Choose Your Move!";
 function computerTurn(){
-    let val=Math.floor(Math.random() * 100) %3;
+    let val=Math.floor(Math.random() * 10000000) %3;
     
     if(val===0){
         return "rock";
