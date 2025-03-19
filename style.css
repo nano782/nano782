@@ -90,3 +90,22 @@ body{
     font-size: 20px;
     
 }
+.work-area{
+    height: 80px;
+    width: 100px;
+    background-color: palevioletred;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.work-area a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    
+}
