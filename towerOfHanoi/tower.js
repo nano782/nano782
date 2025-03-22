@@ -74,8 +74,7 @@ class TowerOfHanoi {
         // create poles
         this.poles = [new Pole(difficultyLevel, 0, 0, 0, 0, 0),
         new Pole(difficultyLevel, 0, 0, 0, 0, 0),
-        new Pole(difficultyLevel, 0, 0, 0, 0, 0)];
-        
+        new Pole(difficultyLevel, 0, 0, 0, 0, 0)];        
         // create rings
         this.rings = [];
         for (let i = 0; i < difficultyLevel; i++) {
@@ -87,6 +86,14 @@ class TowerOfHanoi {
             this.poles[0].insertRing(difficultyLevel - i);
         }
         this.drawRings();
+    }
+
+    drawBoards() {
+        document.getElementById("game-board").innerHTML = 
+        '<div class="board-area" id="pole-base"></div>\
+            <div class="pole-area pole1" id="pole1"></div>\
+            <div class="pole-area pole2" id="pole2"></div>\
+            <div class="pole-area pole3"></div>';
     }
     
     drawRings() {
@@ -100,7 +107,7 @@ class TowerOfHanoi {
         return res;
     }
     updateUI(){
-
+        
         
     }
     
@@ -156,5 +163,9 @@ function mouseMove(e){
 }
 function mouseUp(e){
     document.removeEventListener('mousemove', mouseMove);
-    
 }
+
+
+
+let myGame = new TowerOfHanoi(difficultyLevel, 0, 0, 500, 500);
+myGame.updateUI();
