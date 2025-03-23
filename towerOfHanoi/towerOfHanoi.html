@@ -21,21 +21,29 @@
         <div id="moving-ring"></div>
     </div>
     <div class="move-area">
-        <h1 id="moves" class="moves">Moves</h1>
-        <div class="total-moves-display"></div>
-        <div class="minimum-move">Minimum-Move</div> 
+        <h1 id="moves-count" class="moves">Moves</h1>
+        <div class="minimum-move" id="min-move">Minimum-Move</div> 
     </div>
 
 
     <div class="difficulty-level" id="difficulty-level">
-        <button class="drop-btn">Difficulty level</button>
-        <div class="difficulty">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
+        <button class="drop-btn" id="difficulty-level-btn" onclick="dropdownButtonClicked();">Difficulty level @3 </button>
+        <div class="difficulty" id="difficulty">
+            <a href="#" onclick="updateLevels(1);return false;">1</a>
+            <a href="#" onclick="updateLevels(2);return false;">2</a>
+            <a href="#" onclick="updateLevels(3);return false;">3</a>
+            <a href="#" onclick="updateLevels(4);return false;">4</a>
+            <a href="#" onclick="updateLevels(5);return false;">5</a>
+            <a href="#" onclick="updateLevels(6);return false;">6</a>
+            <a href="#" onclick="updateLevels(7);return false;">7</a>
+            <a href="#" onclick="updateLevels(8);return false;">8</a>
+            <a href="#" onclick="updateLevels(9);return false;">9</a>
+            <a href="#" onclick="updateLevels(10);return false;">10</a>
+            
+
         </div>
         <div class="reset-btn">
-            <button class="reset">Reset</button>
+            <button class="reset" onclick="resetButtonClicked()">Reset</button>
         </div>
     </div>
     <script src="./tower.js"></script>

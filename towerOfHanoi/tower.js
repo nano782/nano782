@@ -1,5 +1,5 @@
 let difficultyLevel = 3;
-const MAX_RING = 12;
+const MAX_RING = 10;
 const RING_COLORS = [
   "blue",
   "red",
@@ -128,7 +128,6 @@ class TowerOfHanoi {
     let pageHeight = window.innerHeight;
     this.posX = 0;
     this.posY = 0;
-    this.state = "idle"; // animation
     this.activeListener = false;
     // game-dimensions
     this.gameHeight = Math.floor(pageHeight * 0.5);
@@ -221,6 +220,7 @@ class TowerOfHanoi {
 
     this.drawBoards();
     this.updateUI();
+    document.getElementById("min-move").innerHTML="Minimum Moves : " + this.minMove;
   }
 
   drawBoards() {
@@ -280,6 +280,8 @@ class TowerOfHanoi {
         .getElementById("ring" + (i + 1))
         .addEventListener("mousedown", curMouseDownListener);
     }
+    document.getElementById("moves-count").innerHTML="Moves : " + this.moveCount;
+    
     if (this.checkWin()) this.displayWinStatus();
   }
 
@@ -383,7 +385,56 @@ class TowerOfHanoi {
 
   displayWinStatus() {
     console.log("won match");
+    window.alert("Hurray You won the Game!");
   }
 }
 
 let myGame = new TowerOfHanoi(difficultyLevel, MAX_RING, RING_COLORS);
+function resetButtonClicked(){
+    if(myGame.moveCount===0){
+        return;
+    }
+    if(confirm("The game is in progress. Do you really want to reset!")){
+        delete myGame;
+        myGame=new TowerOfHanoi(difficultyLevel, MAX_RING, RING_COLORS);
+
+    }
+}
+function updateLevels(level){
+   
+   
+    let canUpdate=true;
+    if(myGame.moveCount>0){
+        if(confirm("The game is in progress. Do you really want to switch the level!")){
+            canUpdate=true;
+        }else{
+            canUpdate=false;
+        }
+
+        
+    }
+    if(canUpdate){
+        
+        difficultyLevel=level;
+        delete myGame;
+        myGame=new TowerOfHanoi(difficultyLevel, MAX_RING, RING_COLORS);
+        document.getElementById("difficulty-level-btn").innerText="Difficulty level @" + difficultyLevel;
+    }
+
+}
+function dropdownButtonClicked(){
+    document.getElementById("difficulty").classList.toggle("show");
+    console.log("print");
+}
+window.onclick = function(event) {
+    if (!event.target.matches('.drop-btn')) {
+      var dropdowns = document.getElementsByClassName("difficulty");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
