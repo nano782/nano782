@@ -1,54 +1,39 @@
 .game-area{
-    /* height: 200px; */
-    /* width: 200px; */
     display: flex;
+    position: fixed;
+    background-color: whitesmoke;
 }
-.board-area{
-    height: 10%;
-    width: 75%;
+.pole-base-area{
     background-color:grey;
     border-radius: 10px;
     position: fixed;
-    bottom: 25%;
-    left: 12.5%;
     border: 2px solid black;
 }
 .pole-area {
-    height: 30%;
-    width: 2%;
     background-color: burlywood;
     border: 1px solid black;
     position: fixed;
-    bottom: 35%;
     border-radius: 10px 10px 0px 0px;
     z-index: -1;
-   
 }
-.pole1{
-   left: 22%; 
+
+.rings-div {
+   z-index: 1;
 }
-.pole2{
-    left: 49%; 
- }
-.pole3{
-    left: 75%; 
- }
+
+.moving-ring {
+   z-index: 2;
+}
+
  .heading-area h1{
     display: flex;
     color: red;
     margin-left: 30%; 
  }
  
-    
- 
  .ring{
-    height: 3%;
-    width: 7%;
     position: fixed;
-    bottom: 35.5%;
-    background-color: cornflowerblue;
     border-radius: 20px;
-    left: 19.5%;
     border:1px solid black;
     cursor: move;
  }
@@ -58,3 +43,6 @@
     top: 100px;
     left: 200px;
  }
+.game-area{
+   color:p
+}
