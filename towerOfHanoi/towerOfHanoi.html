@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tower Of Hanoi</title>
     <link rel="stylesheet" href="./tower.css">
 </head>
+
 <body>
     <div class="heading-area">
         <h1>TOWER OF HANOI</h1>
     </div>
-    <div class="game-area" id ="game-board"> </div>
-    <div class="ring" id="ring1"></div>
-    <!-- <div class="ring" id="ring2" style="bottom: 38.8%; width: 6%; left: 20%"></div>
-    <div class="ring" id="ring3" style="bottom: 42%; width: 5%; left: 20.5%;"></div> -->
-
+    <div class="game-area" id="game-board">
+        <div class="pole-base-area" id="pole-base"></div>
+        <div class="pole-area" id="pole1"></div>
+        <div class="pole-area" id="pole2"></div>
+        <div class="pole-area" id="pole3"></div>
+        <div id="rings-div"></div>
+        <div id="moving-ring"></div>
+    </div>
     <div class="move-area">
         <h1 id="moves" class="moves">Moves</h1>
         <div class="total-moves-display"></div>
@@ -34,6 +39,7 @@
         </div>
     </div>
     <script src="./tower.js"></script>
-    
+
 </body>
+
 </html>

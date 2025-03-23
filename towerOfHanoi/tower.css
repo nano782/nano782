@@ -1,109 +1,45 @@
 .game-area{
-    /* height: 200px; */
-    /* width: 200px; */
     display: flex;
+    position: fixed;
+    background-color: whitesmoke;
 }
-.board-area{
-    height: 10%;
-    width: 75%;
+.pole-base-area{
     background-color:grey;
     border-radius: 10px;
     position: fixed;
-    bottom: 25%;
-    left: 12.5%;
     border: 2px solid black;
 }
 .pole-area {
-    height: 30%;
-    width: 2%;
     background-color: burlywood;
     border: 1px solid black;
     position: fixed;
-    bottom: 35%;
     border-radius: 10px 10px 0px 0px;
     z-index: -1;
-   
 }
-.pole1{
-   left: 22%; 
+
+.rings-div {
+   z-index: 1;
 }
-.pole2{
-    left: 49%; 
- }
-.pole3{
-    left: 75%; 
- }
+
+.moving-ring {
+   z-index: 2;
+}
+
  .heading-area h1{
     display: flex;
     color: red;
     margin-left: 35%; 
  }
  
-    
- 
  .ring{
-    height: 3%;
-    width: 7%;
     position: fixed;
-    bottom: 35.5%;
-    background-color: cornflowerblue;
     border-radius: 20px;
-    left: 19.5%;
     border:1px solid black;
     cursor: move;
  }
 
  .move-area, .moves{
     position: fixed;
-    top: 80px;
-    left: 300px;
-    color: cornflowerblue;
-    font-size: 30px;
+    top: 100px;
+    left: 200px;
  }
- 
-
-.move-area, .minimum-move{
-   display: inline;
-   color: turquoise;
-   font-size: 30px;
-   margin-left: 200px;
-   top: 95px;
-}
-
-   
-
-.drop-btn {
-   background-color: #3498DB;
-   color: paleturquoise;
-   padding: 10px;
-   font-size: 13px;
-   cursor: pointer;
-   border-radius: 20px;
-   width:120px ;
-   margin-top: 0px;
- }
-.difficulty-level{
-   margin-top: -70px;
-   
-}
-.difficulty{
-   display: none;
-   position: absolute;
-   z-index: 1;
-
-}
-.reset-btn{
-   float: right;
-}
-.reset{
-   border-radius: 10px;
-   padding: 5px;
-   margin-right: 5px;
-   height: 40px;
-   width: 80px;
-   font-size: 16px;
-   background-color: blueviolet;
-}
-body{
-   background-color: black;
-}
