@@ -36,7 +36,7 @@
  .heading-area h1{
     display: flex;
     color: red;
-    margin-left: 30%; 
+    margin-left: 35%; 
  }
  
     
@@ -53,8 +53,57 @@
     cursor: move;
  }
 
- .move-area{
+ .move-area, .moves{
     position: fixed;
-    top: 100px;
-    left: 200px;
+    top: 80px;
+    left: 300px;
+    color: cornflowerblue;
+    font-size: 30px;
  }
+ 
+
+.move-area, .minimum-move{
+   display: inline;
+   color: turquoise;
+   font-size: 30px;
+   margin-left: 200px;
+   top: 95px;
+}
+
+   
+
+.drop-btn {
+   background-color: #3498DB;
+   color: paleturquoise;
+   padding: 10px;
+   font-size: 13px;
+   cursor: pointer;
+   border-radius: 20px;
+   width:120px ;
+   margin-top: 0px;
+ }
+.difficulty-level{
+   margin-top: -70px;
+   
+}
+.difficulty{
+   display: none;
+   position: absolute;
+   z-index: 1;
+
+}
+.reset-btn{
+   float: right;
+}
+.reset{
+   border-radius: 10px;
+   padding: 5px;
+   margin-right: 5px;
+   height: 40px;
+   width: 80px;
+   font-size: 16px;
+   background-color: blueviolet;
+}
+body{
+   background-color: black;
+}
